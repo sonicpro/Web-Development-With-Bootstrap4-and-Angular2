@@ -16,7 +16,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: '<h1>Hello, World</h1>'
+            // Notice two-way binding syntax in the template.
+            template: "\n    <h1>Hello, {{name || 'World'}}</h1>\n    <input type=\"text\" [(ngModel)]=\"name\" placeholder=\"name\">\n    "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

@@ -4,6 +4,12 @@ import { Component } from
 
 @Component({
     selector: 'my-app',
-    template: '<h1>Hello, World</h1>'
+    // Notice two-way binding syntax in the template.
+    template: `
+    <h1>Hello, {{name || 'World'}}</h1>
+    <input type="text" [(ngModel)]="name" placeholder="name">
+    `
 })
-export class AppComponent { }
+export class AppComponent {
+    name: string;// = 'World';
+}
