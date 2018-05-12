@@ -17,7 +17,7 @@ var AppComponent = (function () {
         core_1.Component({
             selector: 'my-app',
             // Notice two-way binding syntax in the template.
-            template: "\n    <h1>Hello, {{name || 'World'}}</h1>\n    <input type=\"text\" [(ngModel)]=\"name\" placeholder=\"name\">\n    "
+            template: "\n    <div class=\"container\">\n        <div class=\"page-header\">\n            <h2>Chapter 1 <small>Hello, World</small></h2>\n        </div>\n        <div class=\"jumbotron\">\n            <h1>Hello, {{name || 'World'}}</h1>\n            <input type=\"text\" [(ngModel)]=\"name\" placeholder=\"name\" class=\"form-control form-control-lg\">\n        </div>\n    </div>\n    "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
